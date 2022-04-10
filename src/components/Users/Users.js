@@ -10,7 +10,7 @@ export const Users = () => {
         usersService.getAllUsers().then(value => setUsers(value));
     }, [])
     return (
-        <div className={'user_style'}>
+        <div className={}>
             {
                 users && users.map((user) => <User key={user.id} user={user}/>)
             }
